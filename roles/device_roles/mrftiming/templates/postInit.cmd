@@ -1,5 +1,6 @@
 # save things every thirty seconds
-create_monitor_set("auto_settings.req", 30, "P=$(P), R=$(R)")
+# create_monitor_set("auto_settings.req", 30, "P=$(P), R=$(R)")
+create_monitor_set("vme-evr-230rf.req", 30, "P=$(P), R=$(R)")
 #create_manual_set("evr01_preset.req", "P=$(P),R=$(R):,CONFIGMENU=1")
 
 # update settings

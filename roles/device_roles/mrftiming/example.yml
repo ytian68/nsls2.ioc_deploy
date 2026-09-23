@@ -5,7 +5,7 @@ mrftiming-01:
   environment:
     ENGINEER: C. Engineer
     PREFIX: XF:31ID1-ES{MRFTIMING:01}
-    MRFTiming: "/epics/modules/mrftiming_3bb9fcf"
+    MRFTiming: "/epics/modules/mrftiming_82e4634"
     MRF: "/epics/modules/epics_mrf_82f7bbb"
     UO_01: "1"
     UO_23: "1"

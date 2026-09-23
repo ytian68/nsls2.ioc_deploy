@@ -8,3 +8,19 @@
     mode: "0664"
     owner: "{{ host_config.softioc_user }}"
     group: "{{ host_config.softioc_group }}"
+
+- name: Install AutoSave.cmd
+  ansible.builtin.copy:
+    src: templates/AutoSave.cmd
+    dest: "{{ deploy_ioc_ioc_directory }}/iocBoot/AutoSave.cmd"
+    mode: "0664"
+    owner: "{{ host_config.softioc_user }}"
+    group: "{{ host_config.softioc_group }}"
+
+- name: Install custom postInit.cmd
+  template:
+    src: "templates/postInit.cmd"
+    dest: "{{ deploy_ioc_ioc_directory }}/iocBoot/postInit.cmd"
+    mode: "0664"
+    owner: "{{ host_config.softioc_user }}"
+    group: "{{ host_config.softioc_group }}"
