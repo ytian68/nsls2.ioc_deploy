@@ -18,7 +18,7 @@
     group: "{{ host_config.softioc_group }}"
 
 - name: Install custom postInit.cmd
-  template:
+  ansible.builtin.template:
     src: "templates/postInit.cmd"
     dest: "{{ deploy_ioc_ioc_directory }}/iocBoot/postInit.cmd"
     mode: "0664"
